@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h2>tel: {{ phone }}</h2>
+    <h2>adress: {{ adr }}</h2>
+    {% if 'Pushkin' in adr %}
+        <img src="{% static 'img/123.gif' %}" alt="">
+    {% else %}
+        <img src="{% static 'img/222.gif' %}" alt="">
+    {% endif %}
+    <ol>
+    {% for i in spisok %}
+        <li>{{ i }}</li>
+    {% endfor %}
+    </ol>
+    <a href="{% url 'home' %}">На главную</a>
+</body>
+</html>
