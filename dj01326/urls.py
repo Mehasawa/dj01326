@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='home'),
     path('contact/', views.contacts, name='contacts'),
+    path('rabotnik/<int:id>/', views.month, name='rabotnik'),
     #path('about/', views.about, name='about'),
 ]
