@@ -10,10 +10,11 @@
     <h2>tel: {{ phone }}</h2>
     <h2>adress: {{ adr }}</h2>
     {% if 'Pushkin' in adr %}
-        <img src="{% static 'img/123.gif' %}" alt="">
+        <img src="{% static 'img/123.gif' %}" width="200">
     {% else %}
-        <img src="{% static 'img/222.gif' %}" alt="">
+        <img src="{% static 'img/222.gif' %}" width="200">
     {% endif %}
+    <hr>
     <ol>
     {% for i in spisok %}
         <li>{{ i }}</li>
